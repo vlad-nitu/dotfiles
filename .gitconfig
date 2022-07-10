@@ -1,0 +1,13 @@
+[alias]
+ # Shortcut for listing the log in a decorated graph summary format
+graph = log --all --graph --decorate --oneline
+[user]
+	email = V.P.Nitu@student.tudelft.nl
+	name = Vlad Nitu
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	autocrlf = input
