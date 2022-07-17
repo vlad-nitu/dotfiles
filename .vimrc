@@ -9,7 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'pixelastic/vim-undodir-tree'
+Plugin 'mbbill/undotree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,3 +53,5 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " ALE: reasonable defaults from webinstall.dev/vim-ale
 source ~/.vim/plugins/ale.vim
+
+nnoremap <F5> :UndotreeToggle<CR>
