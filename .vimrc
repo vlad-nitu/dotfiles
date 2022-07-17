@@ -55,3 +55,6 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 source ~/.vim/plugins/ale.vim
 " F5 toggles undotree
 nnoremap <F5> :UndotreeToggle<CR>
+" Persistent undo + undo directory
+set undodir=~/.vim/undo-dir
+set undofile
