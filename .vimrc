@@ -53,5 +53,5 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " ALE: reasonable defaults from webinstall.dev/vim-ale
 source ~/.vim/plugins/ale.vim
-
+" F5 toggles undotree
 nnoremap <F5> :UndotreeToggle<CR>
