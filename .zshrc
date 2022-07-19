@@ -126,6 +126,6 @@ export GPG_TTY=$(tty)
 
 
 function acp(){
-	echo "First parameter is $1"
+	echo "First parameter is $1 !"
 git add . && git commit -m $1 && git push
 }
