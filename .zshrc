@@ -125,7 +125,3 @@ export PATH="$PATH:/Library/Python/2.7/lib/python/site-packages (1.0.1)"
 export GPG_TTY=$(tty)
 
 
-function acp(){
-	echo "First parameter is $1 !"
-git add . && git commit -m $1 && git push
-}
