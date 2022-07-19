@@ -115,5 +115,13 @@ if type brew &>/dev/null; then
 
 # Add aliases for most used commands
 alias home="cd ~" # go to home directory
+alias acp="git add . && git commit -m $1 && git push"
 
 source /Users/vladnitu/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+export PATH="$PATH:/Library/Python/2.7/lib/python/site-packages (1.0.1)"
+
+export GPG_TTY=$(tty)
+
