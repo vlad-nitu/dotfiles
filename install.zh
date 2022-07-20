@@ -1,5 +1,3 @@
-# /install
-
 #!/usr/bin/env bash
 
 LOG="${HOME}/Library/Logs/dotfiles.log"
