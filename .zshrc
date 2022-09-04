@@ -70,7 +70,8 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git vi-mode zsh-syntax-highlighting history-substring-search autojump zsh-autosuggestions)
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ]  && . /opt/homebrew/etc/profile.d/autojump.sh
 
 source $ZSH/oh-my-zsh.sh
 # Fixes error related to "Bad Math Expression"
