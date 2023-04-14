@@ -10,6 +10,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'mbbill/undotree'
+Plugin 'valloric/youcompleteme'
+" Theme plugin
+Plugin 'wuelnerdotexe/vim-enfocado'
+" Plugin 'davidhalter/jedi-vim'
+" Plugin 'klen/python-mode'
+
+
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,21 +43,25 @@ set autoindent
 set mouse=a 
 set backspace=2
 set hlsearch
+" Copy to clipboard when yanking
+set clipboard=unnamed
 
 syntax on
 
+" Theme
 set background=dark
-colorscheme elflord
+colorscheme enfocado
 
-nnoremap <Left>  :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up>    :echoe "Use k"<CR>
-nnoremap <Down>  :echoe "Use j"<CR>
+" Tryhard
+" nnoremap <Left>  :echoe "Use h"<CR>
+" nnoremap <Right> :echoe "Use l"<CR>
+" nnoremap <Up>    :echoe "Use k"<CR>
+" nnoremap <Down>  :echoe "Use j"<CR>
 " ...and in insert mode
-inoremap <Left>  <ESC>:echoe "Use h"<CR>
-inoremap <Right> <ESC>:echoe "Use l"<CR>
-inoremap <Up>    <ESC>:echoe "Use k"<CR>
-inoremap <Down>  <ESC>:echoe "Use j"<CR>
+" inoremap <Left>  <ESC>:echoe "Use h"<CR>
+" inoremap <Right> <ESC>:echoe "Use l"<CR>
+" inoremap <Up>    <ESC>:echoe "Use k"<CR>
+" inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 
 " ALE: reasonable defaults from webinstall.dev/vim-ale
@@ -60,3 +72,10 @@ nnoremap <F5> :UndotreeToggle<CR>
 " Persistent undo + undo directory
 set undodir=~/.vim/undo-dir
 set undofile
+
+
+" Mark ',' as the <leader> key default
+let mapleader = ','
+
+let g:jedi#completions_command = "<C-Tab>"
+
